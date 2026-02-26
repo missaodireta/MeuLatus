@@ -15,9 +15,12 @@ body {
     margin-bottom: 20px;
 }
 
+/* Trava para PC: impede a logo de crescer além do limite */
 .site-header img {
     max-height: 65px;
+    max-width: 250px; 
     width: auto;
+    display: block;
 }
 
 .canvas-border { 
@@ -51,7 +54,10 @@ body {
 }
 
 @media (max-width: 768px) {
-    .site-header img { max-height: 50px; }
+    /* Logo menor no celular */
+    .site-header img { 
+        max-height: 50px; 
+    }
     
     /* Força o canvas a ser responsivo no celular */
     canvas, .canvas-container {
